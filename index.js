@@ -14,7 +14,7 @@ const app = express();
     });
     app.post("/Weather", async (req,res)=>{
      var cityName=req.body["city"];
-         let apiKey = "b55f49e9787f67193c8b12a961f0897d"
+         let apiKey = "YOURS-API-KEY" // replace eith your api key
            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
               let resp = await fetch(url)
               let data = await resp.json();
