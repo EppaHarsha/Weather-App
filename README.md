@@ -13,7 +13,7 @@ This is my first project! A simple weather app built using Node.js, Express, and
 - CSS for basic styling
 
 ## How to Run
-1. Clone the repository: git clone https://github.com/username/weather-app.git
+1. Clone the repository: git clone https://github.com/EppaHarsha/weather-app.git
 2. Install dependencies: npm install
 3. Start the server: npm start
 
