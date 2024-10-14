@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Found</title>
+    <link rel="stylesheet" href="/css/notfound.css">
+    <link rel="icon" href="/weather-app.png">
+</head>
+<body>
+   <div class="div">
+
+       <%  if(temperature==null){ %>
+        <h2 >Weather Information Not Found for <%= Name.toUpperCase() %></h2>
+        <img  src="/WeatherNotFound.png" alt=" Error">
+        <div class="submit-not-found">
+            <form action="/">
+                <button type="submit">Back to search</button>
+            </form>
+        </div>
+        <% }%>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/submit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/weather-app.png">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="main">
+            <div>
+                <h2><%= Name %></h2>
+            
+                 <% if(temperature) { %>
+                        <% if(main=="Clouds"){ %>
+                            <img class="img" src="/brokenclouds.png" alt="error"> 
+                         <% } %>
+                            <%if( main=="Clear"){  %> 
+                            <img class="img" src="/Sun.png" alt="error">
+                        <% } %> 
+                            <%if(main== "Thunderstorm") {%>   
+                                <img  class="img" src="/Thunderstrom.png" alt="error">
+                         <%} %> 
+                            <%if(main=="Rain") {%>     
+                                <img  class="img"src="/Rain.png" alt="error"> 
+                        <%} %>   
+                            <% if(main =="Snow"){%>  
+                                <img class="img" src="/snow.png" alt="error"> 
+                        <%} %> 
+                            <% if (main=="Drizzle"){%>
+                                <img class="img" src="/drizzle.png" alt="error">
+                        <% } %> 
+                            <% if( main== "Atmosphere"){%>
+                                <img class="img" src="/Mist.png" alt="error"> 
+                        <% }%> 
+                            <% if(main=="Haze"){ %>
+                                <img  class="img" src="/haze.png" alt="error">
+                         <% }%>
+                </div>
+            <div class="temp">
+                <h1 class="temperature"><%=temperature  %>°C</h1> 
+                <!-- <h2><%= main %></h2>  -->
+                <h2><%=description %></h2>
+                <div class="temp">
+                    <div class="info-container">
+                        <div class="humidity">
+                            <i class='bx bx-water'></i> 
+                            <div class="value">
+                                <h2><%= humidity %>%</h2> 
+                                <p>Humidity</p> 
+                            </div>
+                        </div>
+                        <div class="wind-speed">
+                            <i class='bx bx-wind'></i>
+                            <div class="value">
+                                <h2><%=speed %> km/h</h2> 
+                                <p>Wind-speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                <div class="submit">
+                 <form action="/">
+                    <input type="submit" value="Back to search">
+                </form>
+                </div>
+       <% } %>
+    </div>   
+    
+</body>
+</html>

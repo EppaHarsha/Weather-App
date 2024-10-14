@@ -1,0 +1,83 @@
+body{
+    background-image:url("/Bacground1.png");
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    font-style:italic
+}
+.main{
+    text-align: center;
+    border: 1px solid white;
+    width: 800px;
+    height: 500px;
+    margin: auto auto;
+    margin-top: 80px;
+    box-shadow: 20px 20px 50px rgb(117, 110, 110);
+    margin-top: -1px;
+    border-radius: 30px;
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 100;
+    color:chocolate;
+}
+p{
+    margin-top: 40px;
+    font-size: 25px;
+    color:dimgrey
+}
+input{
+    line-height: 1.9;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 4px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+input[type="search"]{
+    width:300px;
+    padding-left: 15px;
+    box-shadow: 2px 2px 4px rgb(102, 120, 223);
+    transition: transform 0.3s;
+    color: teal;
+}
+input[type="submit"]{
+ margin-right:440px;
+ border: 1px solid rgb(122, 122, 204);
+ box-shadow: 3px 3px 5px #4a90e2 ;
+ transition: transform 0.3s;
+ background-color: #4a90e2;
+ color: white;
+ border: none;
+}
+.img{
+    width:300px;
+    height: 200px;
+    border: 1px solid wheat;
+    margin: auto;
+    margin-top: 40px;
+    margin-left:200px;
+    background-image: url("/WeatherSearch2.png");
+    background-size: cover;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px whitesmoke;
+   background-color: transparent;
+   transition: transform 0.3s;
+}
+input[type="submit"]:hover{
+    background-color: pink;
+    box-shadow: 4px 4px 8px rgb(245, 221, 221);
+    color:blue;
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+input[type="search"]:hover{
+    border-radius: 8px;
+    box-shadow:2px 2px 5px whitesmoke;
+    transform: scale(1.1); 
+}
+.img:hover{
+    transform: scale(1.1);
+}
